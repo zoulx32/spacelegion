@@ -1,0 +1,189 @@
+html,
+body {
+    background-color: #000;
+    color: white;
+    font-family: "Terminus", monospace;
+    font-size: 18px;
+    padding: 2%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Apply styles to specific elements */
+.log,
+.navbar,
+.article,
+.text,
+.buttonbar,
+.buttonbar p {
+    color: white;
+    outline: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.5);
+}
+
+.log {
+    width: 10%;
+    float: right;
+    margin: 10px;
+    padding: 10px;
+    height: 700px;
+    overflow-y: auto;
+    border-radius: 5px;
+}
+
+.log a {
+    color: #00FFD1; /* Change the color of the links in the "MAP" window */
+    text-decoration: none; /* Remove underlines from links */
+    transition: color 0.3s ease; /* Add a smooth transition effect for color changes */
+}
+
+.log a:hover {
+    color: #901ca0; /* Change the color of the links on hover */
+}
+
+.navbar {
+    width: 70.5%;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    padding-bottom: 30px;
+    border-radius: 5px;
+}
+
+.nav {
+    outline: 1px solid grey;
+    display: block;
+    margin: auto;
+    margin-top: 4px;
+    padding-left: 3px;
+}
+
+.text {
+    color: #fffff;
+    font-family: 'Terminus';
+    width: 70%;
+    float: left;
+    margin: 10px;
+    padding: 15px;
+    display: block;
+    overflow: auto;
+    border-radius: 5px;
+}
+
+.barcode {
+    background-color: rgba(0, 0, 0, 0); /* Adjust the alpha value as needed */
+    padding: 10px; /* Add padding for better visibility */
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: darkgrey;
+}
+
+/* Add your neon lights styles here */
+
+.neon04b {
+    color: #00FFD1;
+    font-family: '04b-30';
+    text-shadow: 0 0 5px rgba(23, 160, 135, 0.7), 0 0 10px rgba(0, 255, 209, 0.5), 0 0 15px rgba(0, 255, 209, 0.3);
+    animation: flicker 1.5s infinite alternate;
+}
+
+.neonvcr {
+    color: #901ca0;
+    font-family: "Terminus", monospace;
+    text-shadow: 0 0 5px rgba(184, 4, 255, 0.7), 0 0 10px rgba(0, 255, 209, 0.5), 0 0 15px rgba(0, 255, 209, 0.3);
+    animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .log,
+    .navbar,
+    .text,
+    .buttonbar {
+        width: 100%;
+        float: none;
+    }
+}
+
+/* Additional styles for vertical alignment */
+@media (min-width: 768px) {
+    .log {
+        float: right;
+        clear: both; /* Clear both floats */
+    }
+
+    .navbar {
+        float: left;
+    }
+
+    .text,
+    .buttonbar {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .buttonbar {
+        margin-left: 10%;
+        width: 80%;
+        margin-right: 10%;
+    }
+
+    .buttonbar p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .buttonbar {
+        margin-left: 10%;
+        width: 80%;
+        margin-right: 10%;
+    }
+
+    .buttonbar p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+

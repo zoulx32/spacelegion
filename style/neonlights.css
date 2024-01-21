@@ -1,0 +1,143 @@
+html,
+body {
+    background-color: #000;
+    color: white;
+    font-family: "Terminus", monospace;
+    font-size: 18px;
+    padding: 2%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.neon-light {
+  font-family: "Roboto Mono", monospace;
+  font-size: 3em; /* Adjust font size as needed */
+  color: #00ff00; /* Neon green color */
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; /* Adjust shadow color and intensity */
+}
+
+.neonvcr {
+  color: #901ca0; /* Cyan Green color */
+  font-family: 'VCR Mono', monospace;
+  text-shadow: 0 0 5px rgba(184, 4, 255, 0.7), 0 0 10px rgba(0, 255, 209, 0.5), 0 0 15px rgba(0, 255, 209, 0.3);
+  animation: flicker 1.5s infinite alternate;
+}
+
+.neon04b {
+  color: #00FFD1; /* Cyan Green color */
+  font-family: '04b-30';
+  text-shadow: 0 0 5px rgba(23, 160, 135, 0.7), 0 0 10px rgba(0, 255, 209, 0.5), 0 0 15px rgba(0, 255, 209, 0.3);
+  animation: flicker 1.5s infinite alternate;
+}
+
+
+
+@keyframes flicker {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@font-face {
+  font-family: 'VCR Mono';
+  src: url('fonts/vcr-mono.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '04b-30';
+  src: url('fonts/04b.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Terminus;
+  src: url('fonts/Terminus.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.buttonbar {
+  display: block;
+  clear: left;
+  margin-left: 21%;
+  width: 50%;
+  background-color: black;
+  border-radius: 0;
+  margin-right: 20%;
+  padding: 20px 10px; /* Updated padding value */
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.5);
+  overflow: hidden;
+  text-align: center;
+}
+
+.buttonbar p {
+  font-family: '04b-30', 'VCR Mono', monospace; /* Use 04b-30 font as a fallback */
+  white-space: nowrap;
+  animation: neonLights 3s infinite;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+.project {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 255, 209, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project-image {
+  flex: 1;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-info {
+  flex: 2;
+  padding: 0 20px;
+  color: white;
+}
+
+.project h4 a {
+  color: #00FFD1;
+  font-family: 'Terminus';
+  text-shadow: 0 0 5px rgba(23, 160, 135, 0.7), 0 0 10px rgba(0, 255, 209, 0.5), 0 0 15px rgba(0, 255, 209, 0.3);
+}
+@keyframes neonLights {
+  0% {
+    text-shadow: 0 0 5px rgba(0, 255, 209, 0.7), 0 0 10px rgba(0, 255, 209, 0.5), 0 0 15px rgba(0, 255, 209, 0.3);
+    color: #00ff00; /* Green */
+  }
+  25% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7), 0 0 10px rgba(255, 0, 0, 0.5), 0 0 15px rgba(255, 0, 0, 0.3);
+    color: #ff00ff; /* Magenta */
+  }
+  50% {
+    text-shadow: 0 0 5px rgba(0, 0, 255, 0.7), 0 0 10px rgba(0, 0, 255, 0.5), 0 0 15px rgba(0, 0, 255, 0.3);
+    color: #0000ff; /* Blue */
+  }
+  75% {
+    text-shadow: 0 0 5px rgba(255, 255, 0, 0.7), 0 0 10px rgba(255, 255, 0, 0.5), 0 0 15px rgba(255, 255, 0, 0.3);
+    color: #ffff00; /* Yellow */
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(255, 0, 255, 0.7), 0 0 10px rgba(255, 0, 255, 0.5), 0 0 15px rgba(255, 0, 255, 0.3);
+    color: #ff0000; /* Red */
+  }
+}
+
+
