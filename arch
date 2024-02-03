@@ -8,7 +8,7 @@ function normal_install() {
 
 function encrypted_install() {
     echo -e "\n\033[1;35m Starting Encrypted Install...\033[0m\n"
-    curl -LO https://raw.githubusercontent.com/nawthing/archcrypt/main/basecrypt > basecrypt 
+    curl -LO https://raw.githubusercontent.com/z399/archcrypt/main/basecrypt > basecrypt 
     chmod +x basecrypt && ./basecrypt
 }
 
